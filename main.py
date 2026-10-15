@@ -17,7 +17,7 @@ async def generate_table(number: int, limit: int = 10):
     for i in range(1, limit + 1):
         table.append({
             "multiplier": i,
-            "result": number * i
+            "result": (number * i)+1
         })
 
     return {
